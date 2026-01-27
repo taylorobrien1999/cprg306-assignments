@@ -8,10 +8,13 @@ export default function Page() {
       <ul>
         <li>
           <Link href="/week-2">Week 2 - Shopping List</Link>
-        </li>
+          </li>
         <li>
           <Link href="/week-3">Week 3 — Shopping List</Link>
-        </li>
+          </li>
+        <li>
+          <Link href="/week-4">Week 4 — Handling Lists</Link>
+          </li>
 
       </ul>
 
