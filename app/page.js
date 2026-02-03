@@ -15,6 +15,9 @@ export default function Page() {
         <li>
           <Link href="/week-4">Week 4 — Handling Lists</Link>
           </li>
+          <li>
+          <Link href="/week-5">Week 5 — Interactivity with Forms</Link>
+          </li>
 
       </ul>
 
