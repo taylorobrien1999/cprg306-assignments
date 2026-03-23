@@ -12,7 +12,7 @@ import { auth } from "../utils/firebase";
 const AuthContext = createContext();
 
 export const AuthContextProvider = ({ children }) => {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState(undefined);
 
   const gitHubSignIn = () => {
     const provider = new GithubAuthProvider();
