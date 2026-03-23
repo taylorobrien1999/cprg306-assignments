@@ -1,13 +1,16 @@
 "use client";
 import { useUserAuth } from "../contexts/AuthContext";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 export default function Page() {
   const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
+  const router = useRouter();
 
   const handleSignIn = async () => {
     try {
       await gitHubSignIn();
+      router.push("/week-10/shopping-list");
     } catch (error) {
       console.error("Sign in failed:", error);
     }

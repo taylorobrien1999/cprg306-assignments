@@ -6,6 +6,7 @@ import ItemList from "./item-list";
 import NewItem from "./new-item";
 import MealIdeas from "./meal-ideas";
 import { getItems, addItem } from "./_services/shopping-list-service";
+import Navbar from "../components/Navbar";
 
 export default function ShoppingListPage() {
   const { user } = useUserAuth();
@@ -25,7 +26,6 @@ export default function ShoppingListPage() {
     }
   }, [user]);
 
-  // Show loading while auth state is being determined
   if (user === undefined) {
     return <main style={{ padding: "2rem" }}><p>Loading...</p></main>;
   }
@@ -56,6 +56,7 @@ export default function ShoppingListPage() {
 
   return (
     <main className="p-6">
+       <Navbar />
       <h1 className="text-2xl font-bold mb-6">
         Shopping List + Meal Ideas
       </h1>
